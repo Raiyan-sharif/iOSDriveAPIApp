@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TestApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Input Text" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hKo-HN-hfy">
+                                <rect key="frame" x="16" y="94" width="361" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Font Size" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NCH-9i-V1x">
+                                <rect key="frame" x="16" y="144" width="67.666666666666671" height="18"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="CIP-DS-bpQ" customClass="CustomSlider" customModule="TestApp" customModuleProvider="target">
+                                <rect key="frame" x="14" y="170" width="365" height="31"/>
+                                <color key="minimumTrackTintColor" red="0.61176470588235299" green="0.76862745098039209" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="maximumTrackTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Color" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="APl-Xf-fUi">
+                                <rect key="frame" x="15.999999999999996" y="216" width="39.666666666666657" height="18"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="77r-yg-PZ8">
+                                <rect key="frame" x="16" y="242" width="361" height="60"/>
+                                <color key="backgroundColor" red="0.95059102770000004" green="0.95059102770000004" blue="0.95420795680000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="FV3-p5-XlR"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="gNq-p9-giL">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Font" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oD8-pS-98B">
+                                <rect key="frame" x="16" y="318" width="33" height="18"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="CDI-ht-cIX">
+                                <rect key="frame" x="16" y="362" width="361" height="250"/>
+                                <color key="backgroundColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.95294117647058818" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="250" id="SFl-Ld-d8q"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="n2a-Ne-gQK">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.95059102770000004" green="0.95059102770000004" blue="0.95420795680000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="oD8-pS-98B" firstAttribute="top" secondItem="77r-yg-PZ8" secondAttribute="bottom" constant="16" id="3Rl-vp-Gx1"/>
+                            <constraint firstItem="NCH-9i-V1x" firstAttribute="top" secondItem="hKo-HN-hfy" secondAttribute="bottom" constant="16" id="AOg-fi-fDd"/>
+                            <constraint firstItem="CDI-ht-cIX" firstAttribute="top" secondItem="oD8-pS-98B" secondAttribute="bottom" constant="26" id="G8N-jP-9Ps"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="NCH-9i-V1x" secondAttribute="trailing" symbolic="YES" id="GtQ-9e-RhI"/>
+                            <constraint firstItem="CIP-DS-bpQ" firstAttribute="leading" secondItem="NCH-9i-V1x" secondAttribute="leading" id="LCj-pT-epu"/>
+                            <constraint firstItem="77r-yg-PZ8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="MpK-W4-tLu"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="CIP-DS-bpQ" secondAttribute="trailing" constant="16" id="OfJ-7K-Qhu"/>
+                            <constraint firstItem="CIP-DS-bpQ" firstAttribute="top" secondItem="NCH-9i-V1x" secondAttribute="bottom" constant="8" id="RfL-Ww-dak"/>
+                            <constraint firstItem="NCH-9i-V1x" firstAttribute="leading" secondItem="hKo-HN-hfy" secondAttribute="leading" id="TFF-aP-HUT"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="CDI-ht-cIX" secondAttribute="trailing" constant="16" id="TPf-am-2b2"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="oD8-pS-98B" secondAttribute="trailing" constant="10" id="cYL-ca-uI9"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="APl-Xf-fUi" secondAttribute="trailing" constant="10" id="hNP-mi-giE"/>
+                            <constraint firstItem="APl-Xf-fUi" firstAttribute="top" secondItem="CIP-DS-bpQ" secondAttribute="bottom" constant="16" id="jl3-O3-0T5"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hKo-HN-hfy" secondAttribute="trailing" constant="16" id="rkQ-Au-Ka0"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="77r-yg-PZ8" secondAttribute="trailing" constant="16" id="sc9-kM-I1z"/>
+                            <constraint firstItem="77r-yg-PZ8" firstAttribute="top" secondItem="APl-Xf-fUi" secondAttribute="bottom" constant="8" symbolic="YES" id="syC-DV-79d"/>
+                            <constraint firstItem="CDI-ht-cIX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="tly-FR-qHe"/>
+                            <constraint firstItem="hKo-HN-hfy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="vAN-6G-uG2"/>
+                            <constraint firstItem="APl-Xf-fUi" firstAttribute="leading" secondItem="CIP-DS-bpQ" secondAttribute="leading" id="wQB-KE-DYV"/>
+                            <constraint firstItem="hKo-HN-hfy" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="35" id="x8E-ZP-60s"/>
+                            <constraint firstItem="oD8-pS-98B" firstAttribute="leading" secondItem="77r-yg-PZ8" secondAttribute="leading" id="ypA-4y-mEi"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="colorCollectionView" destination="77r-yg-PZ8" id="h9B-eV-VpJ"/>
+                        <outlet property="fontCollectionView" destination="CDI-ht-cIX" id="V8u-pL-Amz"/>
+                        <outlet property="fontSizeSliderView" destination="CIP-DS-bpQ" id="PSZ-1Z-h0P"/>
+                        <outlet property="textFieldView" destination="hKo-HN-hfy" id="zkY-hy-qbh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="239" y="-24"/>
+        </scene>
+    </scenes>
+</document>
