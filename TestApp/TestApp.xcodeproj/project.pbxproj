@@ -20,6 +20,7 @@
 		1B7DCD7F2D96086200D0EA54 /* FontCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B7DCD7D2D96086200D0EA54 /* FontCollectionViewCell.swift */; };
 		1B7DCD802D96086200D0EA54 /* FontCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1B7DCD7E2D96086200D0EA54 /* FontCollectionViewCell.xib */; };
 		1B7DCD832D960E7700D0EA54 /* ColorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B7DCD822D960E7700D0EA54 /* ColorModel.swift */; };
+		1B7DCD852D961D8400D0EA54 /* FontModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B7DCD842D961D8400D0EA54 /* FontModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		1B7DCD7D2D96086200D0EA54 /* FontCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontCollectionViewCell.swift; sourceTree = "<group>"; };
 		1B7DCD7E2D96086200D0EA54 /* FontCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FontCollectionViewCell.xib; sourceTree = "<group>"; };
 		1B7DCD822D960E7700D0EA54 /* ColorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorModel.swift; sourceTree = "<group>"; };
+		1B7DCD842D961D8400D0EA54 /* FontModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +110,7 @@
 			isa = PBXGroup;
 			children = (
 				1B7DCD822D960E7700D0EA54 /* ColorModel.swift */,
+				1B7DCD842D961D8400D0EA54 /* FontModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -190,6 +193,7 @@
 				1B7DCD602D95B6E700D0EA54 /* AppDelegate.swift in Sources */,
 				1B7DCD832D960E7700D0EA54 /* ColorModel.swift in Sources */,
 				1B7DCD7F2D96086200D0EA54 /* FontCollectionViewCell.swift in Sources */,
+				1B7DCD852D961D8400D0EA54 /* FontModel.swift in Sources */,
 				1B7DCD7C2D95F42C00D0EA54 /* UIColor+Extension.swift in Sources */,
 				1B7DCD622D95B6E700D0EA54 /* SceneDelegate.swift in Sources */,
 				1B7DCD752D95E82800D0EA54 /* CustomSlider.swift in Sources */,

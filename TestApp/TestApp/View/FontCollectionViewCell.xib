@@ -26,13 +26,22 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="crown.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="u0q-Lc-I7S">
+                                <rect key="frame" x="90" y="15.666666666666668" width="20" height="17.999999999999982"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="GUD-W6-t3U"/>
+                                    <constraint firstAttribute="width" constant="20" id="hr6-WR-zxf"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="NFh-Wb-gV1" firstAttribute="centerY" secondItem="DDu-AA-tIJ" secondAttribute="centerY" id="0al-c0-tt7"/>
                             <constraint firstItem="NFh-Wb-gV1" firstAttribute="centerX" secondItem="DDu-AA-tIJ" secondAttribute="centerX" id="SdS-8m-ToH"/>
+                            <constraint firstAttribute="trailing" secondItem="u0q-Lc-I7S" secondAttribute="trailing" id="TfR-iv-ZMp"/>
                             <constraint firstAttribute="height" constant="35" id="WvU-5U-shc"/>
                             <constraint firstAttribute="width" constant="110" id="Z3k-vh-D3d"/>
+                            <constraint firstAttribute="bottom" secondItem="u0q-Lc-I7S" secondAttribute="bottom" id="oxj-Jt-SQF"/>
                         </constraints>
                     </view>
                 </subviews>
@@ -46,12 +55,15 @@
             </constraints>
             <size key="customSize" width="110" height="35"/>
             <connections>
+                <outlet property="fontIsPremiumImageView" destination="u0q-Lc-I7S" id="lnY-4Y-Pzu"/>
                 <outlet property="fontName" destination="NFh-Wb-gV1" id="7nP-R9-ceC"/>
+                <outlet property="fontView" destination="DDu-AA-tIJ" id="MNF-Z7-AZj"/>
             </connections>
             <point key="canvasLocation" x="27.480916030534349" y="-16.549295774647888"/>
         </collectionViewCell>
     </objects>
     <resources>
+        <image name="crown.fill" catalog="system" width="128" height="92"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

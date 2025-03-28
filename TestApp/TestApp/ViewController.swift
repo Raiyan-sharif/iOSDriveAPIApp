@@ -27,7 +27,14 @@ class ViewController: UIViewController {
             ColorModel(color: UIColor(hex: "113247", alpha: 1), isPrimium: false)
         ]
     
-    var fontItem = ["Default", "Inter", "Roboto", "Iora", "Montserrat", "Item"]
+    var fontItem: [FontModel] = [
+        FontModel(text: "Default", isPrimium: false),
+        FontModel(text: "Inter", isPrimium: true),
+        FontModel(text: "Roboto", isPrimium: false),
+        FontModel(text: "Iora", isPrimium: false),
+        FontModel(text: "Montserrat", isPrimium: true),
+        FontModel(text: "Item", isPrimium: false)
+    ]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -79,7 +86,7 @@ extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource {
         } else if(collectionView == fontCollectionView) {
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "FontCollectionViewCell", for: indexPath) as! FontCollectionViewCell
             
-            cell.fontName.text = fontItem[indexPath.item]
+            cell.configure(with: fontItem[indexPath.item].text, isPremium: fontItem[indexPath.item].isPrimium)
             return cell
         }
         return UICollectionViewCell()
